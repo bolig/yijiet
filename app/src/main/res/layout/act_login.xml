@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.yijiet.client.LoginActivity">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/log" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_8dp"
+        android:layout_marginTop="@dimen/layout_8dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="名医服务一对一       精准快捷心贴心"
+        android:textColor="@color/black_2"
+        android:textSize="@dimen/text_18sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login"
+                android:hint="用户名"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black_1"
+                android:textColorHint="@color/black_3"
+                android:textSize="@dimen/text_16sp" />
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="@dimen/layout_8dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black_1"
+                android:textColorHint="@color/black_3"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_40dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login_btn"
+                android:gravity="center"
+                android:text="立即登录"
+                android:textColor="@color/white_1"
+                android:textSize="@dimen/text_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_40dp"
+                android:layout_marginBottom="@dimen/layout_8dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:gravity="right|center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_40dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="@dimen/layout_8dp"
+                    android:text="其他登录方式"
+                    android:textColor="@color/col_login_more"
+                    android:textSize="@dimen/text_14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/md_grey_500"></View>
+
+                <TextView
+                    android:id="@+id/tv_find"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_40dp"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="@dimen/layout_8dp"
+                    android:text="忘记密码？"
+                    android:textColor="@color/col_login_more"
+                    android:textSize="@dimen/text_14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_registor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_40dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:background="@drawable/draw_login_registor"
+                android:gravity="center"
+                android:text="注册医界通账号"
+                android:textColor="@color/col_login_registor"
+                android:textSize="@dimen/text_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_registor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login"
+                android:hint="手机号"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black_1"
+                android:textColorHint="@color/black_3"
+                android:textSize="@dimen/text_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/et_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_marginRight="@dimen/layout_8dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="验证码"
+                    android:singleLine="true"
+                    android:textColor="@color/black_1"
+                    android:textColorHint="@color/black_3"
+                    android:textSize="@dimen/text_16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:background="@color/md_grey_500"></View>
+
+                <TextView
+                    android:id="@+id/tv_getCode"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/layout_8dp"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="获取验证码"
+                    android:textColor="@color/col_login_code"
+                    android:textSize="@dimen/text_14sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/et_registor_pass"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="@dimen/layout_8dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/black_1"
+                android:textColorHint="@color/black_3"
+                android:textSize="@dimen/text_16sp" />
+
+            <TextView
+                android:id="@+id/tv_toRegistor"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_40dp"
+                android:layout_marginLeft="@dimen/layout_32dp"
+                android:layout_marginRight="@dimen/layout_32dp"
+                android:layout_marginTop="@dimen/layout_8dp"
+                android:background="@drawable/draw_login_btn"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white_1"
+                android:textSize="@dimen/text_16sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

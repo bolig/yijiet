@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_height"
+    android:layout_alignParentLeft="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_cyan_500"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolber_padding_top">
+
+        <ImageView
+            android:id="@+id/iv_l"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/layout_8dp"
+            android:drawableLeft="@android:drawable/ic_menu_call"
+            android:gravity="center_vertical"
+            android:text="成都"
+            android:textColor="@color/black_1"
+            android:textSize="@dimen/text_16sp"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="医界通"
+            android:textColor="@color/black_1"
+            android:textSize="@dimen/text_16sp" />
+
+        <TextView
+            android:id="@+id/tv_r"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:maxEms="4"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black_1"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_r"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
